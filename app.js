@@ -89,16 +89,18 @@ function renderValor() {
   });
   // KPIs — base I+D (justa) y base presupuesto total (contexto)
   const ly = years[years.length - 1];
-  const idi = DATA.biblio?.presupuesto?.idi; // S/ millones de I+D
+  const _prog = DATA.presu?.detalle_ultimo_anio?.por_programa || [];
+  const _idiM = _prog.filter(p => /investigaci|innovaci|ciencia.*tecnolog|\bi\+d\b|\bcti\b/i.test(p.nombre || '')).reduce((a, p) => a + (p.dev || p.pim || 0), 0);
+  const idi = _idiM > 0 ? _idiM / 1e6 : (DATA.biblio?.presupuesto?.idi); // S/ millones de I+D (partida real)
   const wLy = worksByY[ly], devLy = devByY[ly];
   const k = [];
-  if (idi) k.push(['Costo por publicación (I+D)', 'S/ ' + fmtN(Math.round(idi * 1e6 / wLy)), 'base partida I+D ' + (DATA.biblio.presupuesto.anio || ly)]);
+  if (idi) k.push(['Costo por publicación (I+D)', 'S/ ' + fmtN(Math.round(idi * 1e6 / wLy)), 'base partida I+D ' + (DATA.presu?.detalle_ultimo_anio?.anio || ly)]);
   k.push(['Publicaciones por S/10M', (wLy / (devLy / 1e7)).toFixed(1), 'ejecutado ' + ly]);
-  k.push(['Costo por pub (ppto total)', 'S/ ' + fmtM(devLy / wLy).replace('S/ ', ''), 'incluye planilla/pensiones']);
+  k.push(['Costo por pub (ppto total)', 'S/ ' + fmtN(Math.round(devLy / wLy)), 'incluye planilla/pensiones']);
   if (DATA.adm?._meta) k.push(['Presupuesto por ingresante', 'S/ ' + fmtN(Math.round(devLy / DATA.adm._meta.total_ingresantes)), 'referencial (' + ly + ')']);
   document.getElementById('valorKpis').innerHTML = k.map(x => `<div class="kpi"><div class="v">${x[1]}</div><div class="l">${x[0]}</div><div class="s">${x[2] || ''}</div></div>`).join('');
   document.getElementById('valorNote').innerHTML =
-    `La métrica <strong>justa</strong> de eficiencia investigadora es el <strong>costo por publicación con la partida de I+D</strong> (${idi ? 'S/ ' + idi + 'M en ' + (DATA.biblio.presupuesto.anio || ly) : 's/d'}), no el presupuesto total —que paga docencia, planilla, pensiones y servicios, no solo investigar—. El "costo por pub (ppto total)" se muestra solo como contexto y NO debe leerse como gasto en investigación. Fuentes: MEF/SIAF + OpenAlex.`;
+    `La métrica <strong>justa</strong> de eficiencia investigadora es el <strong>costo por publicación con la partida de I+D</strong> (${idi ? 'S/ ' + idi + 'M en ' + (DATA.presu?.detalle_ultimo_anio?.anio || ly) : 's/d'}), no el presupuesto total —que paga docencia, planilla, pensiones y servicios, no solo investigar—. El "costo por pub (ppto total)" se muestra solo como contexto y NO debe leerse como gasto en investigación. Fuentes: MEF/SIAF + OpenAlex.`;
 }
 
 // ---- KPIs ----
@@ -107,12 +109,9 @@ function renderKpis() {
   const k = [];
   const s = DATA.presu?.serie;
   if (s && s.length) {
-    const last = s[s.length - 1];
+    const last = [...s].reverse().find(x => !x.parcial) || s[s.length - 1];
     k.push(['PIM ' + last.year, fmtM(last.pim), 'Presupuesto modificado']);
     k.push(['Devengado ' + last.year, fmtM(last.dev), last.ejec_pct + '% de ejecución']);
-  } else {
-    k.push(['PIM 2025', 'S/ 370.6 M', 'Pliego 514 (MEF)']);
-    k.push(['Devengado 2025', 'S/ 338.3 M', '91.3% de ejecución']);
   }
   const b = DATA.biblio?.uni;
   if (b) { k.push(['Publicaciones', fmtN(b.works), 'histórico (OpenAlex)']); k.push(['Citas · h-index', fmtN(b.cited) + ' · ' + b.h_index, 'impacto científico']); }
@@ -304,7 +303,7 @@ function renderPlan() {
   if (kp) kp.innerHTML = [
     ['Plazas totales', fmtN(total), 'planilla AIRHSP'],
     ['Docentes', doc ? fmtN(doc.n) : '—', doc ? 'prom S/ ' + fmtN(doc.sueldo_promedio) : ''],
-    ['Nominal con nombre', fmtN(P.personas.length), 'régimen CAS (PTE)'],
+    ['Nominal con nombre', fmtN(P.personas.length), 'Portal de Transparencia'],
     ['Remun. máx (CAS)', 'S/ ' + fmtN(Math.round(P.resumen?.remun?.max || 0)), esc(P.personas[0]?.cargo || '')],
   ].map(x => `<div class="kpi"><div class="v">${x[1]}</div><div class="l">${x[0]}</div><div class="s">${x[2] || ''}</div></div>`).join('');
   // charts régimen
@@ -318,7 +317,7 @@ function renderPlan() {
   const periodo = P._meta?.mes ? `${MES[P._meta.mes]} ${P._meta.anio}` : (P._meta?.anio || '');
   // tabla nominal con buscador (todas las personas, filtrable)
   w.innerHTML = `<div class="card">
-    <h3>Personal nominal (régimen CAS) · ${fmtN(P.personas.length)} personas${periodo ? ' · ' + periodo : ''}</h3>
+    <h3>Personal nominal (Portal de Transparencia) · ${fmtN(P.personas.length)} personas${periodo ? ' · ' + periodo : ''}</h3>
     <input id="planSearch" placeholder="🔎 Buscar por nombre, cargo o dependencia…" style="width:100%;padding:10px 12px;margin:8px 0 12px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--tinta);font-size:14px">
     <div class="scroll"><table><thead><tr><th>Nombre</th><th>Cargo</th><th>Dependencia</th><th class="n">Remun. (S/)</th></tr></thead><tbody id="planBody"></tbody></table></div>
     <p class="note" id="planCount"></p>
