@@ -1,0 +1,3383 @@
+{
+ "_meta": {
+  "fuente": "peru-transparente (datos nominales del sector publico: Portal de Transparencia Estandar / PTE + agregado AIRHSP)",
+  "entidad": "Universidad Nacional Federico Villarreal (UNFV) - pliego 524",
+  "anio": 2026,
+  "mes": 2,
+  "nota": "Solo docentes/funcionarios/personal administrativo. No incluye estudiantes. La unica lista NOMINAL con nombre y remuneracion real que publica el PTE para la UNFV (id_entidad PTE 10035, pliego 524) cubre el periodo 2026-02: 415 personas del regimen CAS (D.Leg. 1057). El PTE de la UNFV NO publica el cargo/titulo individual (la fila solo trae dependencia + remuneracion), por lo que no es posible distinguir nominalmente docente vs administrativo; se agrupan como 'administrativo' (personal CAS). El grueso del personal -docentes universitarios (regimen AIRHSP 'Carreras Especiales', 2225 plazas), administrativo nombrado D.Leg.276 (925) y las 3 altas autoridades Ley SERVIR (rector y vicerrectores)- NO tiene desglose nominal ni remuneracion individual en los datos locales; solo existe como agregado AIRHSP (conteo + sueldo promedio, ver resumen.por_regimen_airhsp). El directorio de autoridades (rectora Cristina Asuncion Alzamora Rivero, vicerrectores y decanos) figura en autoridades.csv sin remuneracion. No se inventaron personas ni sueldos.",
+  "total": 415,
+  "total_planilla_airhsp": 3756
+ },
+ "resumen": {
+  "por_regimen_nominal": [
+   {
+    "nombre": "CAS (D.Leg. 1057)",
+    "n": 415
+   }
+  ],
+  "por_regimen_airhsp": [
+   {
+    "nombre": "Carreras Especiales (docentes universitarios)",
+    "n": 2225,
+    "sueldo_promedio": 4162
+   },
+   {
+    "nombre": "D. Leg. Nº 276 (administrativo nombrado)",
+    "n": 925,
+    "sueldo_promedio": 2467
+   },
+   {
+    "nombre": "D. Leg. 1057 CAS",
+    "n": 528,
+    "sueldo_promedio": 2576
+   },
+   {
+    "nombre": "Sin Régimen Laboral",
+    "n": 75,
+    "sueldo_promedio": 1231
+   },
+   {
+    "nombre": "Ley Nº 30057 SERVIR",
+    "n": 3,
+    "sueldo_promedio": 23333
+   }
+  ],
+  "por_categoria": [
+   {
+    "nombre": "administrativo",
+    "n": 415
+   }
+  ],
+  "remun": {
+   "prom": 2587.09,
+   "mediana": 2550.0,
+   "min": 1257.0,
+   "max": 7100.0,
+   "n_con_dato": 415,
+   "n_cero_o_licencia": 0,
+   "nota": "Remuneracion = total_ingreso_mensual (S/) del PTE, periodo 2026-02. Estadisticos calculados sobre remuneraciones > 0."
+  }
+ },
+ "personas": [
+  {
+   "nombre": "CHAVEZ BERROSPI, DIANA CAROLINA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE INVERSIONES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 7100.0
+  },
+  {
+   "nombre": "CORDOVA PAUCAR, DANIEL ELIAS",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "RECTORADO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 6364.19
+  },
+  {
+   "nombre": "BEJAR ATOCHE, YOLANDA DE LAS NIEVES",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE ABASTECIMIENTO Y SERVICIOS GENERALES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 6250.0
+  },
+  {
+   "nombre": "GUERRERO CAMA, NESTOR LEONARDO MARTIN",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE RECURSOS HUMANOS",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 5364.19
+  },
+  {
+   "nombre": "HUERTAS ESPINOZA, JOSE MANUEL",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE INNOVACION DESARROLLO Y EMPRENDIMIENTO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 5364.19
+  },
+  {
+   "nombre": "VEGA GALARZA, ERICK",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE ASESORIA JURIDICA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 5364.19
+  },
+  {
+   "nombre": "CHAVEZ VILLAFANA, JOSE ANGEL",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "DIRECCION GENERAL DE ADMINISTRACION",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 5250.0
+  },
+  {
+   "nombre": "CORZO PUGA, GEORGE HAROLD",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE ABASTECIMIENTO Y SERVICIOS GENERALES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 5250.0
+  },
+  {
+   "nombre": "DIAZ ROMANI, VICTOR EDUARDO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE GESTION DE TECNOLOGIA DE LA INFORMACION",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 5250.0
+  },
+  {
+   "nombre": "GARCIA SOLIS, GINA GLADYS",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "DIRECCION GENERAL DE ADMINISTRACION",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 5250.0
+  },
+  {
+   "nombre": "HUARANCCA BERROCAL, ESAU JESUS",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE ABASTECIMIENTO Y SERVICIOS GENERALES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 5250.0
+  },
+  {
+   "nombre": "PONCE TORRES, NATALY VIVIANA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE GESTION DE TECNOLOGIA DE LA INFORMACION",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 5250.0
+  },
+  {
+   "nombre": "REINOSO ZEGARRA, ALVARO FRANK",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE INVERSIONES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 5250.0
+  },
+  {
+   "nombre": "TARAZONA ALATRISTA, ERICK JULINHO VICTOR",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE RECURSOS HUMANOS",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 5250.0
+  },
+  {
+   "nombre": "ESPINOZA MORALES, MARIA CELIA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "DIRECCION GENERAL DE ADMINISTRACION",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 4864.19
+  },
+  {
+   "nombre": "LUZURIAGA YUCRA, RUBEN DARIO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "DIRECCION GENERAL DE ADMINISTRACION",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 4864.19
+  },
+  {
+   "nombre": "APARCANA RAMOS, NATY MAGALY",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE ASESORIA JURIDICA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 4750.0
+  },
+  {
+   "nombre": "CONTRERAS FIGUEREDO, ALEJANDRO FERMIN",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE ABASTECIMIENTO Y SERVICIOS GENERALES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 4750.0
+  },
+  {
+   "nombre": "DELGADO VERGARAY, ROSA INES",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE ABASTECIMIENTO Y SERVICIOS GENERALES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 4750.0
+  },
+  {
+   "nombre": "ROJAS ACOSTA, MAYLEEN LYLI",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "DIRECCION GENERAL DE ADMINISTRACION",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 4750.0
+  },
+  {
+   "nombre": "ROMERO HAYASHI, MARCO ANTONIO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE PLANIFICACIÓN",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 4750.0
+  },
+  {
+   "nombre": "SALAS URBANO, CAMILO MICHAEL",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE ABASTECIMIENTO Y SERVICIOS GENERALES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 4750.0
+  },
+  {
+   "nombre": "CASTELLANO CACERES, SONIA DEL PILAR",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE PLANIFICACIÓN",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 4364.19
+  },
+  {
+   "nombre": "DEL RIO PUA, HELEN MARGOT",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "SECRETARIA GENERAL",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 4364.19
+  },
+  {
+   "nombre": "DOMINGUEZ LESCANO, RONALD ENRIQUE",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE ASESORIA JURIDICA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 4364.19
+  },
+  {
+   "nombre": "FELICES SANABRIA, TANIA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE GESTION DE TECNOLOGIA DE LA INFORMACION",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 4364.19
+  },
+  {
+   "nombre": "FIGUEROA ESPINOZA, MIRIAN",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE RECURSOS HUMANOS",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 4364.19
+  },
+  {
+   "nombre": "RODRIGUEZ PADILLA, HEITEL JUNIOR",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE RECURSOS HUMANOS",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 4364.19
+  },
+  {
+   "nombre": "ARCOS SARAVIA, NEYLIN GABRIELA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE PLANIFICACIÓN",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 4250.0
+  },
+  {
+   "nombre": "EVARISTO CRUZ, MAYUMI ROOSHINA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE GESTION DE TECNOLOGIA DE LA INFORMACION",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 4250.0
+  },
+  {
+   "nombre": "GARCIA AGUIRRE, PABLO JESUS",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "RECTORADO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 4250.0
+  },
+  {
+   "nombre": "HUANCA CONDORI, MARY LUZ",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE PLANIFICACIÓN",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 4250.0
+  },
+  {
+   "nombre": "OCAS AGUILAR, EDISA IRMA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE RECURSOS HUMANOS",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 4250.0
+  },
+  {
+   "nombre": "PAREDES MURGA, ANDERSON EDU",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "EDITORIAL UNIVERSITARIA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 4250.0
+  },
+  {
+   "nombre": "RODRIGUEZ RAMIREZ, ANGELA YOHANA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "SECRETARIA GENERAL",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 4250.0
+  },
+  {
+   "nombre": "TEJADA NUÑEZ, JIMMY GEANNI",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE ABASTECIMIENTO Y SERVICIOS GENERALES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 4250.0
+  },
+  {
+   "nombre": "VASQUEZ NEYRA, ANALUCIA SHARON",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE RECURSOS HUMANOS",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 4250.0
+  },
+  {
+   "nombre": "VERGARAY VEGA, FRANCISCO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE ABASTECIMIENTO Y SERVICIOS GENERALES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 4250.0
+  },
+  {
+   "nombre": "WuRTTELE AGUIRRE, LUIS ALBERTO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE ASUNTOS ACADEMICOS",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 4250.0
+  },
+  {
+   "nombre": "YARANGA MIGUEL, ILENE CARMEN ADRIANA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE PLANIFICACIÓN",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 4250.0
+  },
+  {
+   "nombre": "ARTEAGA AURORA, ERICK DANTE",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE INVERSIONES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 3900.0
+  },
+  {
+   "nombre": "ESPILCO RUIZ, CHRISTOPHER OWEN",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE INVERSIONES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 3900.0
+  },
+  {
+   "nombre": "CRUZ REATEGUI, MANUEL ALEJANDRO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE INVERSIONES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 3864.19
+  },
+  {
+   "nombre": "GUARDIA CAMPOS, SHANTALL KAROLAYM",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE CALIDAD",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 3864.19
+  },
+  {
+   "nombre": "MARIN DUEÑAS, MANUEL ALEJANDRO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE ASUNTOS ACADEMICOS",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 3864.19
+  },
+  {
+   "nombre": "MORALES VALENZUELA, JUDITH MARGOT",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE REGISTROS ACADEMICOS",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 3864.19
+  },
+  {
+   "nombre": "SALDAÑA MIRES, ALBERTO JAIR",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE ASESORIA JURIDICA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 3864.19
+  },
+  {
+   "nombre": "ALCOCER MEDINA, MIGUEL ANGEL",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE CALIDAD",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 3764.19
+  },
+  {
+   "nombre": "DIAZ ALFARO, CAROLINA JANETH",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE ASUNTOS ACADEMICOS",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 3764.19
+  },
+  {
+   "nombre": "BASAN GUABLOCHO, MARIA MILAGRITOS",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE CIENCIAS NATURALES Y MATEMATICA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 3750.0
+  },
+  {
+   "nombre": "FIGUEROA MEDINA, DANTE ANGEL",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "SECRETARIA GENERAL",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 3750.0
+  },
+  {
+   "nombre": "FLORES RAMOS, IVON GISEL",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE BIENESTAR UNIVERSITARIO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 3750.0
+  },
+  {
+   "nombre": "PERALTA LUIS, GIANCARLOS NATHANAEL",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "EDITORIAL UNIVERSITARIA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 3750.0
+  },
+  {
+   "nombre": "SUAREZ RODRIGUEZ, TULIO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE MEDICINA \"HIPOLITO UNANUE\"",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 3750.0
+  },
+  {
+   "nombre": "VILLANUEVA GERONIMO, JOHN EDINSON",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE TESORERIA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 3600.0
+  },
+  {
+   "nombre": "FARFAN FARFAN, WILBER FRANCISCO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE CONTABILIDAD",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 3364.19
+  },
+  {
+   "nombre": "LEVANO VICENTE, CESAR MARTIN",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE ASUNTOS ACADEMICOS",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 3364.19
+  },
+  {
+   "nombre": "MEJIA ACUÑA, TANIA PILAR",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE RECURSOS HUMANOS",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 3364.19
+  },
+  {
+   "nombre": "PAUCAR PUCLLAS, KEVIN",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE GESTION DE TECNOLOGIA DE LA INFORMACION",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 3364.19
+  },
+  {
+   "nombre": "SOTO GUTIERREZ, CARMEN ELIZABETH",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE ASESORIA JURIDICA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 3364.19
+  },
+  {
+   "nombre": "APAZA CAYO, NERY MARGOTH",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE BIENESTAR UNIVERSITARIO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 3250.0
+  },
+  {
+   "nombre": "ARANCIBIA DE LA CRUZ, JACQUELINE",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE BIENESTAR UNIVERSITARIO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 3250.0
+  },
+  {
+   "nombre": "ASENJO AZPILCUETA, MARIA AMELIA DE LAS MERCEDES",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "ESCUELA UNIVERSITARIA DE POST GRADO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 3250.0
+  },
+  {
+   "nombre": "BAUTISTA BECERRA, ELY",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE BIENESTAR UNIVERSITARIO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 3250.0
+  },
+  {
+   "nombre": "BAUTISTA CASIANO, ROSA VICTORIA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE BIENESTAR UNIVERSITARIO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 3250.0
+  },
+  {
+   "nombre": "BLAS JIMENO, SCARLET",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE BIENESTAR UNIVERSITARIO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 3250.0
+  },
+  {
+   "nombre": "CALDAS AVILA, JANNINA KATIA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE BIENESTAR UNIVERSITARIO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 3250.0
+  },
+  {
+   "nombre": "CORNEJO FORONDA, CRISTOPHER ALEXIS",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE ABASTECIMIENTO Y SERVICIOS GENERALES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 3250.0
+  },
+  {
+   "nombre": "CUEVA GONZALES, RUTH ESTEFANY",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE BIENESTAR UNIVERSITARIO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 3250.0
+  },
+  {
+   "nombre": "DE LA TORRE PEREZ, RONALD RENZO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE ABASTECIMIENTO Y SERVICIOS GENERALES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 3250.0
+  },
+  {
+   "nombre": "GARCIA CASTAÑEDA, FRANK OSWALD",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE ABASTECIMIENTO Y SERVICIOS GENERALES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 3250.0
+  },
+  {
+   "nombre": "GONZALES PAZ, GLADYS VICTORIA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE BIENESTAR UNIVERSITARIO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 3250.0
+  },
+  {
+   "nombre": "GRUBER GONZ-LEZ, ASDR+BAL JOSE",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE ABASTECIMIENTO Y SERVICIOS GENERALES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 3250.0
+  },
+  {
+   "nombre": "GUERRA VELARDE, JOSE ENRIQUE",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE ABASTECIMIENTO Y SERVICIOS GENERALES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 3250.0
+  },
+  {
+   "nombre": "HIDALGO CARDENAS, GILMAR MILTON",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE GESTION DEL EGRESADO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 3250.0
+  },
+  {
+   "nombre": "HUERTA AREVALO, THOM-S ADRI-N",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE ABASTECIMIENTO Y SERVICIOS GENERALES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 3250.0
+  },
+  {
+   "nombre": "HURTADO FILIPES, YESSICA KAREN INES",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE BIENESTAR UNIVERSITARIO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 3250.0
+  },
+  {
+   "nombre": "LEVANO BALDEÓN, RENATO NICODEMO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE ABASTECIMIENTO Y SERVICIOS GENERALES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 3250.0
+  },
+  {
+   "nombre": "MARTINEZ LA TORRE, GIOVANNI ALEJANDRO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE ABASTECIMIENTO Y SERVICIOS GENERALES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 3250.0
+  },
+  {
+   "nombre": "MELGAREJO MEZA, LUIS RONNY",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE BIENESTAR UNIVERSITARIO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 3250.0
+  },
+  {
+   "nombre": "MONTERO GÓMEZ, FERNANDO JES+S",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE ABASTECIMIENTO Y SERVICIOS GENERALES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 3250.0
+  },
+  {
+   "nombre": "PEREZ SIQUERO, HANS LENNER",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "SECRETARIA GENERAL",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 3250.0
+  },
+  {
+   "nombre": "PLASENCIA ROJAS, SHARANEYDA ESTEFANY",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE BIENESTAR UNIVERSITARIO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 3250.0
+  },
+  {
+   "nombre": "PRETEL NAVARRETE, ABEL EDUARDO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE ABASTECIMIENTO Y SERVICIOS GENERALES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 3250.0
+  },
+  {
+   "nombre": "RIVAS QUISPE, JIMMY ANDREE",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE ABASTECIMIENTO Y SERVICIOS GENERALES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 3250.0
+  },
+  {
+   "nombre": "RODRIGUEZ SOTELO, ALEXANDER",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE ABASTECIMIENTO Y SERVICIOS GENERALES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 3250.0
+  },
+  {
+   "nombre": "ROMERO PACHECO, ISABEL VICTORIA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE ABASTECIMIENTO Y SERVICIOS GENERALES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 3250.0
+  },
+  {
+   "nombre": "TAMARIZ TELLO, EMERSON",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE ABASTECIMIENTO Y SERVICIOS GENERALES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 3250.0
+  },
+  {
+   "nombre": "ROJAS MUÑOZ, MIRTZA KARINA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE RECURSOS HUMANOS",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 3050.0
+  },
+  {
+   "nombre": "JIMENEZ QUISPE, JENNY JANETH",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE ABASTECIMIENTO Y SERVICIOS GENERALES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2964.19
+  },
+  {
+   "nombre": "SAENZ SIPION, LUIS MIGUEL",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "VICE RECTORADO ACADEMICO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2964.19
+  },
+  {
+   "nombre": "VILLANUEVA ALONSO, JULIO CESAR",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE CALIDAD",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2964.19
+  },
+  {
+   "nombre": "AGUERO HUAMAN, FLAVIO ALFREDO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE EDUCACIÓN",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2864.19
+  },
+  {
+   "nombre": "BAZAN ARIAS, OSCAR ABRAHAM",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE INGENIERIA INDUSTRIAL Y DE SISTEMAS",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2864.19
+  },
+  {
+   "nombre": "CAMPOS CESPEDES, BRANDON ANDRE",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "EDITORIAL UNIVERSITARIA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2864.19
+  },
+  {
+   "nombre": "CCELLCCASCCA CASAFRANCA, FLOR DIANA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE CIENCIAS FINANCIERAS Y CONTABLES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2864.19
+  },
+  {
+   "nombre": "CHACON PAUYAC, ENVER GIOVANNI",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "BIBLIOTECA CENTRAL",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2864.19
+  },
+  {
+   "nombre": "CHUMPITAZI NAVARRO, ANGEL ANTONIO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "VICE RECTORADO ACADEMICO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2864.19
+  },
+  {
+   "nombre": "CUEVAS SANCHEZ, JUDITH DEL CARMEN",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE ARQUITECTURA Y URBANISMO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2864.19
+  },
+  {
+   "nombre": "GUERRA OLIVARES, RONALD FERNANDO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "INSTITUTO CENTRAL DE GESTION DE LA INVESTIGACION",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2864.19
+  },
+  {
+   "nombre": "MEDINA ZARATE, JAMES EARTH",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE INGENIERIA CIVIL",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2864.19
+  },
+  {
+   "nombre": "MORENO LANDA, JOEL EDUARDO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE TESORERIA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2864.19
+  },
+  {
+   "nombre": "NUÑEZ HUAMAN, SANDRA DEL ROCIO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE OCEANOGRAFIA, PESQUERIA, CIENCIA ALIMENTARIAS Y ACUICULTUR",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2864.19
+  },
+  {
+   "nombre": "RODRIGUEZ VIVANCO, NIDIA PAOLA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE PLANIFICACIÓN",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2864.19
+  },
+  {
+   "nombre": "SANCHEZ CHAVEZ, WALTER JOHAN",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "ORGANO DE CONTROL INSTITUCIONAL",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2864.19
+  },
+  {
+   "nombre": "VERAMENDI ROJAS, EDWIN MARLON",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE TECNOLOGIA MEDICA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2864.19
+  },
+  {
+   "nombre": "AGUIRRE GALLEGOS, ANTHONY STEVENS",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE REGISTROS ACADEMICOS",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2750.0
+  },
+  {
+   "nombre": "ALCAZAR ALVAREZ, RAUL AUGUSTO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "EDITORIAL UNIVERSITARIA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2750.0
+  },
+  {
+   "nombre": "ANTONIO VERA, SANDRA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "BIBLIOTECA CENTRAL",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2750.0
+  },
+  {
+   "nombre": "BELTRAN CRISPIN, MARIA OPORTUNA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "BIBLIOTECA CENTRAL",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2750.0
+  },
+  {
+   "nombre": "BERNEDO BALBUENA, DENKA EVA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "SECRETARIA GENERAL",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2750.0
+  },
+  {
+   "nombre": "CANTA GUTIERREZ, LUIS ANDRES",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE GESTION DE TECNOLOGIA DE LA INFORMACION",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2750.0
+  },
+  {
+   "nombre": "CORDOVA SANI, MARIA ROSA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "DIRECCION GENERAL DE ADMINISTRACION",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2750.0
+  },
+  {
+   "nombre": "CUYUTUPAC YUPANQUI, GERALDINA DEL CARMEN",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE CONTABILIDAD",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2750.0
+  },
+  {
+   "nombre": "DIAZ PEÑA, WILMER ANTONIO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "BIBLIOTECA CENTRAL",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2750.0
+  },
+  {
+   "nombre": "GARCIA ZORRILLA, ARODI AURORA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE RECURSOS HUMANOS",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2750.0
+  },
+  {
+   "nombre": "GUEDEZ CARRILLO, LILIANA DE LOS ANGELES",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE BIENESTAR UNIVERSITARIO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2750.0
+  },
+  {
+   "nombre": "GUERRA CHIPANA, RUMALDO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE TESORERIA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2750.0
+  },
+  {
+   "nombre": "GUTIERREZ QUIROZ, FRANCO BILLY",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE REGISTROS ACADEMICOS",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2750.0
+  },
+  {
+   "nombre": "JURADO MORENO, PEDRO MANUEL ANTONIO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE GESTION DE TECNOLOGIA DE LA INFORMACION",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2750.0
+  },
+  {
+   "nombre": "KOHASHIKAWA NOGEN, CESAR MANUEL",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "BIBLIOTECA CENTRAL",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2750.0
+  },
+  {
+   "nombre": "LAURENTE ESPINOZA, EVELYN REBECA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE BIENESTAR UNIVERSITARIO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2750.0
+  },
+  {
+   "nombre": "LOPEZ PALOMINO, EDGAR ALFONSO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE RECURSOS HUMANOS",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2750.0
+  },
+  {
+   "nombre": "MEDINA PANDURO, JUANA VALERIA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE TESORERIA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2750.0
+  },
+  {
+   "nombre": "MONTOYA JIMENEZ, CLARA TRINIDAD",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE BIENESTAR UNIVERSITARIO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2750.0
+  },
+  {
+   "nombre": "MORALES MAYORGA, JOSE LUIS FRANCISCO II",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE REGISTROS ACADEMICOS",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2750.0
+  },
+  {
+   "nombre": "NARREA CHAMAN, JORGE LUIS",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE ABASTECIMIENTO Y SERVICIOS GENERALES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2750.0
+  },
+  {
+   "nombre": "NUÑEZ OSORIO, PAMELA ELIANE",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "SECRETARIA GENERAL",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2750.0
+  },
+  {
+   "nombre": "OSC-TEGUI INCHI, JHON PA+L",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "BIBLIOTECA CENTRAL",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2750.0
+  },
+  {
+   "nombre": "PILCO CARTOLIN, DE MUNIVE CLAUDIA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "BIBLIOTECA CENTRAL",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2750.0
+  },
+  {
+   "nombre": "RAZURI ESPINOZA, RENZO JAN PIERO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE REGISTROS ACADEMICOS",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2750.0
+  },
+  {
+   "nombre": "ROJAS QUIROZ, ANGIE HELEN",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "EDITORIAL UNIVERSITARIA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2750.0
+  },
+  {
+   "nombre": "ROSAS RIOJA, VICTOR ALONSO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE TESORERIA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2750.0
+  },
+  {
+   "nombre": "RUIZ VILCHERREZ, PAUL ROGELIO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "BIBLIOTECA CENTRAL",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2750.0
+  },
+  {
+   "nombre": "S-NCHEZ CHILIN, SERGIO IV-N",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "BIBLIOTECA CENTRAL",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2750.0
+  },
+  {
+   "nombre": "SAAVEDRA REATEGUI, JUAN PABLO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE ABASTECIMIENTO Y SERVICIOS GENERALES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2750.0
+  },
+  {
+   "nombre": "SAGASTEGUI RASMUSSEN, KIMBERLEY",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE COMUNICACIONES E IMAGEN INSTITUCIONAL",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2750.0
+  },
+  {
+   "nombre": "SALIRROSAS MELON, MILAGROS",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE REGISTROS ACADEMICOS",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2750.0
+  },
+  {
+   "nombre": "ULFFE TUESTA, JUAN FRANCISCO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "BIBLIOTECA CENTRAL",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2750.0
+  },
+  {
+   "nombre": "VARGAS ROMERO, DIANA ROSALVINA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE BIENESTAR UNIVERSITARIO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2750.0
+  },
+  {
+   "nombre": "ESPINOZA RIVERA, CRISTIAN ELVIS",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE RECURSOS HUMANOS",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2600.0
+  },
+  {
+   "nombre": "GONZALEZ CUBA, LISETH ISABEL",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE REGISTROS ACADEMICOS",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2600.0
+  },
+  {
+   "nombre": "CALDERON CHUQUILIN, LUIS WILFREDO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE CALIDAD",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2564.19
+  },
+  {
+   "nombre": "LAYZA GALLEGOS, PATRICIA ROSARIO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE BIENESTAR UNIVERSITARIO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2564.19
+  },
+  {
+   "nombre": "OBREGON CANDIOTTI, JESSICA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "BIBLIOTECA CENTRAL",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2564.19
+  },
+  {
+   "nombre": "QUISPE FLORES, EUGENIA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE BIENESTAR UNIVERSITARIO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2564.19
+  },
+  {
+   "nombre": "VASQUEZ HURTADO, ENMA GRACIELA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE CALIDAD",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2564.19
+  },
+  {
+   "nombre": "ACOSTA ALFARO, ARNALDO ANDRE",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE INGENIERIA ELECTRONICA E INFORMATICA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "AGUIRRE ORE, CARLOS ALBERTO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE ODONTOLOGIA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "ALARCON CAVERO, LEYLA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE INGENIERIA GEOGRAFICA, AMBIENTAL Y ECOTURISMO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "ALTAMIRANO RAMIREZ, MANUEL ANGEL",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE CIENCIAS NATURALES Y MATEMATICA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "ALVAREZ LIÑAN, MARKO FRANCES",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE CIENCIAS ECONOMICAS",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "ALVARO RAMOS, URSULA YARLETT",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE HUMANIDADES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "ARONE FELICES, SANDRO FELIX",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE INGENIERIA GEOGRAFICA, AMBIENTAL Y ECOTURISMO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "BABILONIA BERNAL, ANDRES FELIPE",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE OCEANOGRAFIA, PESQUERIA, CIENCIA ALIMENTARIAS Y ACUICULTUR",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "BENAVIDES GARCIA, JOSE LEONARDO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE DERECHO Y CIENCIA POLITICA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "BOLAÑOS SOTOMAYOR, GINA INGRID",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE INGENIERIA ELECTRONICA E INFORMATICA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "CAÑARI CUMPA, DIEGO MAURO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE CIENCIAS SOCIALES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "CARRILLO PADILLA, MELODY",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE RECURSOS HUMANOS",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "CHAVEZ URIARTE, VILMA IRENE",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE ODONTOLOGIA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "CHERO ROJAS, ALDAIR ALEXANDER",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE RECURSOS HUMANOS",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "COLLAO MUÑOZ, BRUNO JOEL",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE RECURSOS HUMANOS",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "CORA MAMANI, ORVILLE WILBUR",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE CIENCIAS NATURALES Y MATEMATICA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "CUADROS JERI, ABRIL MADELEINE",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE MEDICINA \"HIPOLITO UNANUE\"",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "CUARESMA DEL AGUILA, CESAR LEANDRO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE HUMANIDADES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "CULQUI GARCIA, JENNIE EVELYN",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE TECNOLOGIA MEDICA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "CUTIPA MOSCOSO, CRISTHIAN LEANDRO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE ARQUITECTURA Y URBANISMO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "DAVILA HORNA, HENRY AUGUSTO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE CIENCIAS SOCIALES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "DIAZ HUAYHUAS, EDUARDO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE INGENIERIA INDUSTRIAL Y DE SISTEMAS",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "DOLORES ANAYA, HERBERT",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE CIENCIAS ECONOMICAS",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "ESCALANTE ECHEVARRIA, ANDRES ALFONSO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE RECURSOS HUMANOS",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "ESCALANTE ECHEVARRIA, CRISTOPHER LEANDRO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE INGENIERIA ELECTRONICA E INFORMATICA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "ESPINOZA NOMBERTO, GIANCARLO SERGIO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE OCEANOGRAFIA, PESQUERIA, CIENCIA ALIMENTARIAS Y ACUICULTUR",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "FIGUEROA LUQUE, SILVIA MIREILLY",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE CIENCIAS NATURALES Y MATEMATICA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "FLORES COARITA, YURI EVERTON",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE MEDICINA \"HIPOLITO UNANUE\"",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "GARCIA ROJAS, JOSE LUIS",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE INGENIERIA INDUSTRIAL Y DE SISTEMAS",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "GOICOCHEA CARRANZA, CARMEN ROSA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE INGENIERIA GEOGRAFICA, AMBIENTAL Y ECOTURISMO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "GUIZADO ZEDANO, KLEDDY",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE INGENIERIA ELECTRONICA E INFORMATICA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "HUACHO ALIAGA, GIOVANNI",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE MEDICINA \"HIPOLITO UNANUE\"",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "HUAMAN ROBLES, IVAN MARTIN",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE MEDICINA \"HIPOLITO UNANUE\"",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "HUARANGA CAMPOS, DANIEL",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE CIENCIAS ECONOMICAS",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "JULIA CALDERON, JORGE LUIS",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE INGENIERIA ELECTRONICA E INFORMATICA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "LOARTE GALARZA, CARLOS ENRIQUE",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE CIENCIAS FINANCIERAS Y CONTABLES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "LOPEZ GUTIERREZ, EBODIO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE INGENIERIA GEOGRAFICA, AMBIENTAL Y ECOTURISMO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "LOPEZ SIMBALA, YONATAN MANOLITO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE INGENIERIA GEOGRAFICA, AMBIENTAL Y ECOTURISMO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "LOZADA MENA, IRVIN DAVIES",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE CIENCIAS NATURALES Y MATEMATICA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "LOZANO CHAVEZ, JOHN JIMMY",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE ODONTOLOGIA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "MALDONADO LUPU, SANDY FIORELLA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE MEDICINA \"HIPOLITO UNANUE\"",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "MALDONADO LUPU, SANDY PAMELA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE CIENCIAS NATURALES Y MATEMATICA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "MAMANI QUISPE, ELMER WILLIE MARCELINO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE CIENCIAS FINANCIERAS Y CONTABLES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "MOROTE LOZANO, SEBASTIAN ERNESTO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE CIENCIAS SOCIALES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "MUÑOZ PRADO, RUBI LIZBETH",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE MEDICINA \"HIPOLITO UNANUE\"",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "NAJARRO MENDEZ, LIZETH DENNIS",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE CIENCIAS NATURALES Y MATEMATICA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "OCHOA GRANDA, MIRIAM VICTORIA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE ADMINISTRACION",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "OLIVARES RIVERA, ENRIQUE ARTURO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE TECNOLOGIA MEDICA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "PAREDES DIAZ, WILLIAM ORLANDO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE ADMINISTRACION",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "PEDRAZA CASTRO, ALMENDRA ROCIO ELIZABETH",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE DERECHO Y CIENCIA POLITICA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "PEREDA CABRERA, JUAN ANTONIO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE ARQUITECTURA Y URBANISMO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "PEREZ BERNAL, DALTOHON MAICOL",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE MEDICINA \"HIPOLITO UNANUE\"",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "PEZO AREVALO, JULIO ALBERTO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE MEDICINA \"HIPOLITO UNANUE\"",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "QUISPE QUISPE, BRAYAN ROBERT",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE PSICOLOGIA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "QUISPICUSI PATILLA, NINOSKA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE TECNOLOGIA MEDICA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "ROBLES ACOSTA, VLADIMIR ROMULO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE PSICOLOGIA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "ROMERO AMARO, GUSTAVO EDWIN",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE CIENCIAS SOCIALES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "ROSALES CASTRO, DIEGO HARRY",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE OCEANOGRAFIA, PESQUERIA, CIENCIA ALIMENTARIAS Y ACUICULTUR",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "ROSALES OVIEDO, ANTONIO FELIPE",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE CIENCIAS NATURALES Y MATEMATICA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "SANCHEZ BERNAL, JOVITA ESTEFANY",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE CIENCIAS NATURALES Y MATEMATICA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "SANCHEZ QUIROZ, ALLISON SHARON",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE OCEANOGRAFIA, PESQUERIA, CIENCIA ALIMENTARIAS Y ACUICULTUR",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "SIERRA OTRIAS, ANDREA BELEN",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE INGENIERIA CIVIL",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "SIPAN DIAZ, FLOR DE MARIA ANTONIA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE HUMANIDADES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "SORIA HURTADO, ALDAHIR ENRIQUE",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE INGENIERIA ELECTRONICA E INFORMATICA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "SOTO VIDAL, JOANA PILAR",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE ODONTOLOGIA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "TARRILLO HORNA, JORGE JACKIE",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE HUMANIDADES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "TUCTO JARA, ANA MARIBEL",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE MEDICINA \"HIPOLITO UNANUE\"",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "VARGAS MACHUCA MARICHI, GEYNERS HAMILTONE",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE MEDICINA \"HIPOLITO UNANUE\"",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "VASQUEZ PEREZ, MYRNA LUCERO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE PSICOLOGIA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "VENTURA SANDOVAL, CARLOS ANTONIO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE CIENCIAS SOCIALES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "VILA BACA, LUCERO VALERIA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE INGENIERIA INDUSTRIAL Y DE SISTEMAS",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "VILA LAZARO, FELIX ALEJANDRO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE CIENCIAS NATURALES Y MATEMATICA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "YANCI QUISPE, LISBETH FABIOLA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE OCEANOGRAFIA, PESQUERIA, CIENCIA ALIMENTARIAS Y ACUICULTUR",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "YAPU TIPACTI, PAOLA ELENA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE INGENIERIA ELECTRONICA E INFORMATICA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2550.0
+  },
+  {
+   "nombre": "MENDOZA AYAMAMANI, MARLENY",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE REGISTROS ACADEMICOS",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2464.19
+  },
+  {
+   "nombre": "ALMESTAR PESCORAN, DIEGO ALEXIS",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE CIENCIAS ECONOMICAS",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2364.19
+  },
+  {
+   "nombre": "AQUINO PAULINO, JUAN",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE ABASTECIMIENTO Y SERVICIOS GENERALES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2364.19
+  },
+  {
+   "nombre": "ARANGO ACUÑA, ROSARIO GEOS MARLET",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE INGENIERIA INDUSTRIAL Y DE SISTEMAS",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2364.19
+  },
+  {
+   "nombre": "BALCAZAR ABARCA, NIULER",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE HUMANIDADES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2364.19
+  },
+  {
+   "nombre": "BARZOLA SUMARI, JUAN JOSE",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE PSICOLOGIA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2364.19
+  },
+  {
+   "nombre": "BENDEZU NIÑO, ROXANA MARISELA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE ODONTOLOGIA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2364.19
+  },
+  {
+   "nombre": "CAIRO PIZARRO, VILMA ROSA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE INGENIERIA GEOGRAFICA, AMBIENTAL Y ECOTURISMO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2364.19
+  },
+  {
+   "nombre": "CARRION BEJAR, EDDY MARCOS",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "ESCUELA UNIVERSITARIA DE POST GRADO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2364.19
+  },
+  {
+   "nombre": "CHAPILLIQUEN MARTINEZ, KARLOS JHORDANO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "SECRETARIA GENERAL",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2364.19
+  },
+  {
+   "nombre": "DEXTRE GOMERO, GUSTAVO JUNIOR'S",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE INGENIERIA ELECTRONICA E INFORMATICA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2364.19
+  },
+  {
+   "nombre": "DIAZ COBA, DEMETRIO JOSEPH",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE MEDICINA \"HIPOLITO UNANUE\"",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2364.19
+  },
+  {
+   "nombre": "FLORES GOMEZ, LUIS FERNANDO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE INGENIERIA GEOGRAFICA, AMBIENTAL Y ECOTURISMO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2364.19
+  },
+  {
+   "nombre": "FONSECA CAHUANA, JOSELIN LISSETH",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "SECRETARIA GENERAL",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2364.19
+  },
+  {
+   "nombre": "GAMARRA JIMENEZ, DAVID MILTON",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE INGENIERIA GEOGRAFICA, AMBIENTAL Y ECOTURISMO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2364.19
+  },
+  {
+   "nombre": "GELDRES MARCELO, FLOR DE MARIA ISIDORA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE BIENESTAR UNIVERSITARIO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2364.19
+  },
+  {
+   "nombre": "GUTIERREZ VILLAFUERTE, MICHAEL JESUS",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE ARQUITECTURA Y URBANISMO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2364.19
+  },
+  {
+   "nombre": "HUAYRE TARAZONA, CARMEN VIVIANA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE ABASTECIMIENTO Y SERVICIOS GENERALES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2364.19
+  },
+  {
+   "nombre": "INGA YAHUANA, ARTURO JESUS",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE ADMINISTRACION",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2364.19
+  },
+  {
+   "nombre": "JULCA MEDINA, ROSARIO DEL PILAR",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE CIENCIAS NATURALES Y MATEMATICA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2364.19
+  },
+  {
+   "nombre": "LIZARBE PEREZ, HELEN CRISTH",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE ABASTECIMIENTO Y SERVICIOS GENERALES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2364.19
+  },
+  {
+   "nombre": "MEDINA VILCHEZ, MIRTHA VANESSA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE TECNOLOGIA MEDICA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2364.19
+  },
+  {
+   "nombre": "MELLO DIAZ, CYNTHIA PAOLA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE INGENIERIA ELECTRONICA E INFORMATICA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2364.19
+  },
+  {
+   "nombre": "PALOMINO VERA, CRISTY GABRIELA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE PSICOLOGIA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2364.19
+  },
+  {
+   "nombre": "PINEDO CARRANZA, JOSELITO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE DERECHO Y CIENCIA POLITICA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2364.19
+  },
+  {
+   "nombre": "PUERTA LLAJA, JOSE HUMBERTO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE OCEANOGRAFIA, PESQUERIA, CIENCIA ALIMENTARIAS Y ACUICULTUR",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2364.19
+  },
+  {
+   "nombre": "QUINTO RIOS, JIMMY ALEX",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE ASESORIA JURIDICA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2364.19
+  },
+  {
+   "nombre": "RAMOS ROJAS, JULIO CESAR",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "SECRETARIA GENERAL",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2364.19
+  },
+  {
+   "nombre": "ROJAS GARCES, GENARO ROY",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE ABASTECIMIENTO Y SERVICIOS GENERALES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2364.19
+  },
+  {
+   "nombre": "ROJAS LUYO, JUAN ROBERTO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE CIENCIAS FINANCIERAS Y CONTABLES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2364.19
+  },
+  {
+   "nombre": "ROSSINI CASTRO, YUSEPI LUCIANO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE CIENCIAS FINANCIERAS Y CONTABLES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2364.19
+  },
+  {
+   "nombre": "VALLADARES BRUNO, DEBORA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE ARQUITECTURA Y URBANISMO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2364.19
+  },
+  {
+   "nombre": "VARGAS VALLE, MAX AYMAN",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "CENTRO DE GESTIÓN CULTURAL FEDERICO VILLARREAL",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2364.19
+  },
+  {
+   "nombre": "VITES LINARES, FAUSTA ANTUANETH LIZETH",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE ABASTECIMIENTO Y SERVICIOS GENERALES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2364.19
+  },
+  {
+   "nombre": "ACUÑA FELIX, MICHAEL LEONARD",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE ABASTECIMIENTO Y SERVICIOS GENERALES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2250.0
+  },
+  {
+   "nombre": "AGUILAR CANCHES, VICTOR LEOPOLDO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE RECURSOS HUMANOS",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2250.0
+  },
+  {
+   "nombre": "ALARCON MOROTE, JOSHUA JOSBEL",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE ADMISION",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2250.0
+  },
+  {
+   "nombre": "ALCEDO BARRIENTOS, KARINA ALEJANDRA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE ODONTOLOGIA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2250.0
+  },
+  {
+   "nombre": "ALTAMIRANO AMAYA, DANIEL STIVENS",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE DERECHO Y CIENCIA POLITICA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2250.0
+  },
+  {
+   "nombre": "BARBACHAN RIVAS, ALANIS DAYANA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "ESCUELA UNIVERSITARIA DE POST GRADO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2250.0
+  },
+  {
+   "nombre": "BUITRON BRAVO, JESUS EDUARDO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE DERECHO Y CIENCIA POLITICA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2250.0
+  },
+  {
+   "nombre": "CABANILLAS COTRINA, CLAUDIA MARIL+",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE REGISTROS ACADEMICOS",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2250.0
+  },
+  {
+   "nombre": "CANALES UNCHUPAICO, MARIEL JOSSELIE",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "RECTORADO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2250.0
+  },
+  {
+   "nombre": "CANO AGUILAR, MARCO ANTONIO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE ODONTOLOGIA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2250.0
+  },
+  {
+   "nombre": "CASTRO YARLEQUE, LUISA ISABEL",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE ADMINISTRACION",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2250.0
+  },
+  {
+   "nombre": "CAYCHO RIVAS, LEONARDO MANUEL",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE DERECHO Y CIENCIA POLITICA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2250.0
+  },
+  {
+   "nombre": "CIPRIANO FRANCISCO, HILDA EDITH",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE COMUNICACIONES E IMAGEN INSTITUCIONAL",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2250.0
+  },
+  {
+   "nombre": "CORDOVA MOLINA, PILAR ESCARLI",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE CIENCIAS ECONOMICAS",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2250.0
+  },
+  {
+   "nombre": "CORNEJO SIHUIN, ANTHONY STEPHANO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE DERECHO Y CIENCIA POLITICA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2250.0
+  },
+  {
+   "nombre": "DE LA CRUZ QUISPE, MARIO JAVIER",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE ABASTECIMIENTO Y SERVICIOS GENERALES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2250.0
+  },
+  {
+   "nombre": "FIGUEROA ESPINOZA, DANTE MARCO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE ABASTECIMIENTO Y SERVICIOS GENERALES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2250.0
+  },
+  {
+   "nombre": "G-LVEZ MONCADA, DIEGO JOSHUA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE DERECHO Y CIENCIA POLITICA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2250.0
+  },
+  {
+   "nombre": "GALLARDO GUTIERREZ, ROSA JAZMIN",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "ESCUELA UNIVERSITARIA DE POST GRADO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2250.0
+  },
+  {
+   "nombre": "GALLO ALVA, CRISTHIAN JESUS",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE PSICOLOGIA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2250.0
+  },
+  {
+   "nombre": "GALLO VILA, ANA LUISA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE REGISTROS ACADEMICOS",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2250.0
+  },
+  {
+   "nombre": "HUAMANÑAHUI AEDO, EDWIN",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE ADMINISTRACION",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2250.0
+  },
+  {
+   "nombre": "JANAMPA MAGRO, JENIFER LUCERO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "DIRECCION GENERAL DE ADMINISTRACION",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2250.0
+  },
+  {
+   "nombre": "JARAMA MUÑOZ, MILITZA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE CIENCIAS FINANCIERAS Y CONTABLES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2250.0
+  },
+  {
+   "nombre": "LEON PEREZ, BRUNO JAVIER",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE ADMINISTRACION",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2250.0
+  },
+  {
+   "nombre": "MALCA AQUINO, JUAN ANDRES",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "EDITORIAL UNIVERSITARIA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2250.0
+  },
+  {
+   "nombre": "MAMANI LARICO, LIDA JOSSELYN",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE ABASTECIMIENTO Y SERVICIOS GENERALES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2250.0
+  },
+  {
+   "nombre": "MELGAREJO CHAVEZ, EDSON MIULLER",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE ADMISION",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2250.0
+  },
+  {
+   "nombre": "MORALES AREVALO, MARIA DEL PILAR",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "ESCUELA UNIVERSITARIA DE POST GRADO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2250.0
+  },
+  {
+   "nombre": "PALACIOS CARRERA, NOELIA NICOLE",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE CIENCIAS NATURALES Y MATEMATICA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2250.0
+  },
+  {
+   "nombre": "PURIZACA MONTES, CARMEN ROCIO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE ODONTOLOGIA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2250.0
+  },
+  {
+   "nombre": "QUISPICUSI PATILLA, SANDRA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE REGISTROS ACADEMICOS",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2250.0
+  },
+  {
+   "nombre": "RAMIREZ RUIZ, JOSE FRANCISCO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE TECNOLOGIA MEDICA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2250.0
+  },
+  {
+   "nombre": "RIVERA GUTIERREZ, LUIS MIGUEL",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE ABASTECIMIENTO Y SERVICIOS GENERALES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2250.0
+  },
+  {
+   "nombre": "ROJAS CHACCHI, MARIA KELLY",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE REGISTROS ACADEMICOS",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2250.0
+  },
+  {
+   "nombre": "ROJAS MENDOZA, ROBERT",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "SECRETARIA GENERAL",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2250.0
+  },
+  {
+   "nombre": "ROSAS JUSCAMAYTA, LUIS ERNESTO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE OCEANOGRAFIA, PESQUERIA, CIENCIA ALIMENTARIAS Y ACUICULTUR",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2250.0
+  },
+  {
+   "nombre": "RUIZ PACHECO, BRYAN CARLOS",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE ABASTECIMIENTO Y SERVICIOS GENERALES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2250.0
+  },
+  {
+   "nombre": "SANDOVAL MORI, LENIN GENARO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE TECNOLOGIA MEDICA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2250.0
+  },
+  {
+   "nombre": "SEVILLANO DAZA, KEVIN ALBERT JOSEPH",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE ABASTECIMIENTO Y SERVICIOS GENERALES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2250.0
+  },
+  {
+   "nombre": "SUAZO BALLASCO, CLEVER MICHAEL",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE ABASTECIMIENTO Y SERVICIOS GENERALES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2250.0
+  },
+  {
+   "nombre": "TORRES ANGELES, LINO RAUL",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "ESCUELA UNIVERSITARIA DE POST GRADO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2250.0
+  },
+  {
+   "nombre": "TORRES MONTES, YERSON ALEXIS",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE GESTION DE TECNOLOGIA DE LA INFORMACION",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2250.0
+  },
+  {
+   "nombre": "VASQUEZ HURTADO, JUAN CARLOS",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE ABASTECIMIENTO Y SERVICIOS GENERALES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2250.0
+  },
+  {
+   "nombre": "WONG RELAIZA, FANNY F-TIMA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE CIENCIAS FINANCIERAS Y CONTABLES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2250.0
+  },
+  {
+   "nombre": "BRISSOLESE PAZ, YOVANA GRIMANESA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "SECRETARIA GENERAL",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2164.19
+  },
+  {
+   "nombre": "ESPINOZA ZEGARRA, BRUNO LUIS",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE ABASTECIMIENTO Y SERVICIOS GENERALES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2164.19
+  },
+  {
+   "nombre": "LEON MADRID, VICTOR CAMILO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "VICE RECTORADO DE INVESTIGACION",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2164.19
+  },
+  {
+   "nombre": "RAMIREZ CASTAÑEDA, CELENITA ROSALUZ",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE BIENESTAR UNIVERSITARIO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2164.19
+  },
+  {
+   "nombre": "REMON GARCIA, GUILLERMO LUCHO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE BIENESTAR UNIVERSITARIO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2164.19
+  },
+  {
+   "nombre": "SILVA PUTPAÑA, MARIBEL",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE BIENESTAR UNIVERSITARIO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2164.19
+  },
+  {
+   "nombre": "TRUJILLO TENGAN, SATOMY ROMINA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "VICE RECTORADO ACADEMICO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2164.19
+  },
+  {
+   "nombre": "GUERRA GUERRA, MARY ALEJANDRA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE RECURSOS HUMANOS",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2064.19
+  },
+  {
+   "nombre": "LA ROSA FLORES, YESENIA KEYLA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "ESCUELA UNIVERSITARIA DE POST GRADO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2064.19
+  },
+  {
+   "nombre": "CASTRO BAUTISTA, LUIS ENRIQUE",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE INNOVACION DESARROLLO Y EMPRENDIMIENTO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 2050.0
+  },
+  {
+   "nombre": "HERBOZO ARANDA, JOSE LUIS",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "ESCUELA UNIVERSITARIA DE POST GRADO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1964.19
+  },
+  {
+   "nombre": "PUENTE VARGAS, FERNANDO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE ABASTECIMIENTO Y SERVICIOS GENERALES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1964.19
+  },
+  {
+   "nombre": "RIOS HUALPA, AARON JOSE",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "ESCUELA UNIVERSITARIA DE POST GRADO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1964.19
+  },
+  {
+   "nombre": "CALDERON MAUTINO, SARA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE BIENESTAR UNIVERSITARIO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1864.19
+  },
+  {
+   "nombre": "GUERE HUAYNATE, STEPHANIE",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "CENTRO UNIVERSITARIO DE IDIOMAS",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1864.19
+  },
+  {
+   "nombre": "HERRERA ARIAS, ROLANDO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE ABASTECIMIENTO Y SERVICIOS GENERALES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1864.19
+  },
+  {
+   "nombre": "PINEDO MUÑOZ, JESSICA MILAGROS",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE ABASTECIMIENTO Y SERVICIOS GENERALES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1864.19
+  },
+  {
+   "nombre": "PUCHURI VILLA, ITALO LINO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "ESCUELA UNIVERSITARIA DE POST GRADO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1864.19
+  },
+  {
+   "nombre": "QUEVEDO CORIA, JUAN JOSE",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE ABASTECIMIENTO Y SERVICIOS GENERALES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1864.19
+  },
+  {
+   "nombre": "RIVAS FLORES, ROCIO ELISABEL",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE REGISTROS ACADEMICOS",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1864.19
+  },
+  {
+   "nombre": "TERRAZOS BRICEÑO, FAUSTO BENJAMIN",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE OCEANOGRAFIA, PESQUERIA, CIENCIA ALIMENTARIAS Y ACUICULTUR",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1864.19
+  },
+  {
+   "nombre": "VIDAL RUIZ, JAYSINIA JESUS",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "DIRECCION GENERAL DE ADMINISTRACION",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1864.19
+  },
+  {
+   "nombre": "YGLESIAS SARDA, JORGE VICTOR",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE INGENIERIA GEOGRAFICA, AMBIENTAL Y ECOTURISMO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1864.19
+  },
+  {
+   "nombre": "ZAPATA COLCHADO, ANGELICA MARIA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "EDITORIAL UNIVERSITARIA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1864.19
+  },
+  {
+   "nombre": "ALBA VERA, REYNALDO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE PSICOLOGIA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1664.19
+  },
+  {
+   "nombre": "AYALA MATA, FAUSTO GUALBERTO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE ODONTOLOGIA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1664.19
+  },
+  {
+   "nombre": "BADILLO CANCHANYA, JUAN RAFAEL",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE RECURSOS HUMANOS",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1664.19
+  },
+  {
+   "nombre": "CUADROS BOYLE, GLORIA SOFIA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE PSICOLOGIA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1664.19
+  },
+  {
+   "nombre": "ENRIQUEZ QUEREVALU, GABRIEL ISAAC",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE ADMINISTRACION",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1664.19
+  },
+  {
+   "nombre": "JARAMILLO SANTIAGO, ANANIAS",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE ARQUITECTURA Y URBANISMO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1664.19
+  },
+  {
+   "nombre": "MENESES CASTRO, ERUBEN OMAR",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE ODONTOLOGIA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1664.19
+  },
+  {
+   "nombre": "PARREÑO CUBA, SONIA ROSA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE OCEANOGRAFIA, PESQUERIA, CIENCIA ALIMENTARIAS Y ACUICULTUR",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1664.19
+  },
+  {
+   "nombre": "PASACHE SANDOVAL, HERMINIO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE TECNOLOGIA MEDICA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1664.19
+  },
+  {
+   "nombre": "POZO FERNANDEZ, GIANINA MARISOL",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE INGENIERIA ELECTRONICA E INFORMATICA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1664.19
+  },
+  {
+   "nombre": "PUGLISEVICH BELTRAN, TANIA SILVANA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE ADMINISTRACION",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1664.19
+  },
+  {
+   "nombre": "SANCHEZ VALLE, MARIZELA DEL ROSARI",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE INGENIERIA INDUSTRIAL Y DE SISTEMAS",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1664.19
+  },
+  {
+   "nombre": "SCHREIBER DEL CASTILLO, KCARAN VICTORIA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE HUMANIDADES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1664.19
+  },
+  {
+   "nombre": "SEANCAS ROJAS, BEATRIZ",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE EDUCACIÓN",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1664.19
+  },
+  {
+   "nombre": "TORRES MATOS, MAX HELMUT",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE CIENCIAS NATURALES Y MATEMATICA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1664.19
+  },
+  {
+   "nombre": "VASQUEZ LOPEZ, CESAR AUGUSTO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE OCEANOGRAFIA, PESQUERIA, CIENCIA ALIMENTARIAS Y ACUICULTUR",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1664.19
+  },
+  {
+   "nombre": "VENTURA DELGADO, ELIZABETH MARIELLA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE HUMANIDADES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1664.19
+  },
+  {
+   "nombre": "VICENTE ARIAS, GREGORIO MARTIN",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "ESCUELA UNIVERSITARIA DE POST GRADO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1664.19
+  },
+  {
+   "nombre": "YAMO FLORES, MARIA GIOVANNA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE INGENIERIA CIVIL",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1664.19
+  },
+  {
+   "nombre": "ZARATE ROJAS, PAMELA IVONNE",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE DERECHO Y CIENCIA POLITICA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1664.19
+  },
+  {
+   "nombre": "AGUIRRE ROMERO, ROSA INES",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE CIENCIAS NATURALES Y MATEMATICA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1564.19
+  },
+  {
+   "nombre": "APOLAYA SALDAÑA, MONICA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE CIENCIAS ECONOMICAS",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1564.19
+  },
+  {
+   "nombre": "FERNANDEZ SALGUERO, ELIZABETH",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE OCEANOGRAFIA, PESQUERIA, CIENCIA ALIMENTARIAS Y ACUICULTUR",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1564.19
+  },
+  {
+   "nombre": "GARCES ESPINAR, KAREM JANETT",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "SECRETARIA GENERAL",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1564.19
+  },
+  {
+   "nombre": "GUIZADO PEREZ, NIDIA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE MEDICINA \"HIPOLITO UNANUE\"",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1564.19
+  },
+  {
+   "nombre": "GUZMAN MELGAR, MARIA IVONNE",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE TECNOLOGIA MEDICA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1564.19
+  },
+  {
+   "nombre": "MANCO BALCAZAR, JUAN ANTONIO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE HUMANIDADES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1564.19
+  },
+  {
+   "nombre": "MEJIA PAREDES, NESTOR ANTONIO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE CIENCIAS ECONOMICAS",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1564.19
+  },
+  {
+   "nombre": "MONTESINOS ROJAS, MARIA TERESA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE ADMINISTRACION",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1564.19
+  },
+  {
+   "nombre": "QUINTANA ASCARZA, ABRAHAM",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE CIENCIAS NATURALES Y MATEMATICA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1564.19
+  },
+  {
+   "nombre": "VEGA BURGA, ANDRES ARTURO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE BIENESTAR UNIVERSITARIO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1564.19
+  },
+  {
+   "nombre": "VILCHEZ POLO, CARMEN MATILDE",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE PSICOLOGIA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1564.19
+  },
+  {
+   "nombre": "BENITES PALOMINO, ROGER CARLOS",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE ADMISION",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1430.19
+  },
+  {
+   "nombre": "AGUILAR PONCE, MARTHA LUZ",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "ESCUELA UNIVERSITARIA DE POST GRADO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1389.19
+  },
+  {
+   "nombre": "ALARCON PADILLA, WILDER RICARDO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE ABASTECIMIENTO Y SERVICIOS GENERALES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1389.19
+  },
+  {
+   "nombre": "ALVA CHAVEZ, HILDELBRANDO DAVID",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "CENTRO PRE UNIVERSITARIO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1389.19
+  },
+  {
+   "nombre": "ALVAREZ CALIXTO, JUAN CARLOS",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE EDUCACIÓN",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1389.19
+  },
+  {
+   "nombre": "ARMAS VIDARTE, CHRISTIAN MICHAEL",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE TESORERIA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1389.19
+  },
+  {
+   "nombre": "ASTUDILLO CARRETERO, FREDDY ROBERTO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE INGENIERIA GEOGRAFICA, AMBIENTAL Y ECOTURISMO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1389.19
+  },
+  {
+   "nombre": "AVELLANEDA VASQUEZ, ERIKA SUSANA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "SECRETARIA GENERAL",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1389.19
+  },
+  {
+   "nombre": "AVILA ROMERO, MIGUEL ENRIQUE",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE ODONTOLOGIA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1389.19
+  },
+  {
+   "nombre": "BALLON MARTINEZ, RAPHAEL ENRIQUE",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "COMITE ELECTORAL",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1389.19
+  },
+  {
+   "nombre": "BARCENA CERDA, ANGELICA YSABEL",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "CENTRO DE GESTIÓN CULTURAL FEDERICO VILLARREAL",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1389.19
+  },
+  {
+   "nombre": "BARRIGA DOMINGUEZ, JULIO WALTHER",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE OCEANOGRAFIA, PESQUERIA, CIENCIA ALIMENTARIAS Y ACUICULTUR",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1389.19
+  },
+  {
+   "nombre": "BERNAOLA BERRIO, MIRIAM CECILIA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE TECNOLOGIA MEDICA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1389.19
+  },
+  {
+   "nombre": "BERNAOLA YATA, LUZ MARIA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE BIENESTAR UNIVERSITARIO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1389.19
+  },
+  {
+   "nombre": "BEUZEVILLE HUARANGA, OSCAR JOSE CARLOS",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE DERECHO Y CIENCIA POLITICA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1389.19
+  },
+  {
+   "nombre": "CASTRO PEIRANO, RICARDO GIANMARCO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "INSTITUTO CENTRAL DE RECREACIÓN EDUCACIÓN FISICA Y DEPORTES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1389.19
+  },
+  {
+   "nombre": "CHAMBILLA PACASE, JUDITH NATALI",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA CENTRAL DE BIENESTAR UNIVERSITARIO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1389.19
+  },
+  {
+   "nombre": "CHANDUVI FLORES, JOSE ANDRES",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE EDUCACIÓN",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1389.19
+  },
+  {
+   "nombre": "CHICOMA GAMBOA, MANUEL",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "CENTRO PRE UNIVERSITARIO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1389.19
+  },
+  {
+   "nombre": "DE LA CRUZ REYES, CESAR TEOFILO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE TESORERIA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1389.19
+  },
+  {
+   "nombre": "ESTEBAN BUSTAMANTE, SAMUEL AQUILES",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE OCEANOGRAFIA, PESQUERIA, CIENCIA ALIMENTARIAS Y ACUICULTUR",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1389.19
+  },
+  {
+   "nombre": "FAJARDO VELASQUEZ, ZOILA GIANNINA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE DERECHO Y CIENCIA POLITICA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1389.19
+  },
+  {
+   "nombre": "GIRAO LOZADA, NOLBERTO ANTONIO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "CENTRO PRE UNIVERSITARIO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1389.19
+  },
+  {
+   "nombre": "GULARTE UNYEN, MARIA DEL PILAR",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "ESCUELA UNIVERSITARIA DE POST GRADO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1389.19
+  },
+  {
+   "nombre": "GUTARRA SEDANO, ROSARIO KARIN",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "ESCUELA UNIVERSITARIA DE POST GRADO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1389.19
+  },
+  {
+   "nombre": "HUAMAN ORELLANA, DELIA TAVITA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "SECRETARIA GENERAL",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1389.19
+  },
+  {
+   "nombre": "HUAYANAY ACUÑA, YUMIN",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE INGENIERIA GEOGRAFICA, AMBIENTAL Y ECOTURISMO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1389.19
+  },
+  {
+   "nombre": "INFANTE QUIROZ, JOSE ANGEL",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "CENTRO PRE UNIVERSITARIO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1389.19
+  },
+  {
+   "nombre": "LA TORRE LOPEZ, CELSA PATRICIA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE INGENIERIA CIVIL",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1389.19
+  },
+  {
+   "nombre": "LLANCA CHICANA, GILMAR DEL CARMEN",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE EDUCACIÓN",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1389.19
+  },
+  {
+   "nombre": "LLOCLLA VASQUEZ, JESUS MANUEL",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE OCEANOGRAFIA, PESQUERIA, CIENCIA ALIMENTARIAS Y ACUICULTUR",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1389.19
+  },
+  {
+   "nombre": "MANSILLA CORONADO, NINA MILAGROS",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "CENTRO PRE UNIVERSITARIO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1389.19
+  },
+  {
+   "nombre": "MASCO QUISPE, CARLOS JOHNNY",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE ABASTECIMIENTO Y SERVICIOS GENERALES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1389.19
+  },
+  {
+   "nombre": "MAYORGA HUACAC, WILBER",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE ABASTECIMIENTO Y SERVICIOS GENERALES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1389.19
+  },
+  {
+   "nombre": "MENDOZA ALFARO, CARMEN ELIZABETH",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE EDUCACIÓN",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1389.19
+  },
+  {
+   "nombre": "MENDOZA FLORES, CESIBEL MARIA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "ESCUELA UNIVERSITARIA DE POST GRADO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1389.19
+  },
+  {
+   "nombre": "MONTALVO LA MADRID, ELLIOT IBAN",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "INSTITUTO CENTRAL DE GESTION DE LA INVESTIGACION",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1389.19
+  },
+  {
+   "nombre": "MORI LOPEZ, MARIA CECILIA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE HUMANIDADES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1389.19
+  },
+  {
+   "nombre": "NAMO GARCIA, ROBERT LEONEL",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "ESCUELA UNIVERSITARIA DE POST GRADO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1389.19
+  },
+  {
+   "nombre": "NAPURI DE RAYGADA, NORA NELLY",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE MEDICINA \"HIPOLITO UNANUE\"",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1389.19
+  },
+  {
+   "nombre": "OBANDO BELLOTA, MARIANELLA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "CENTRO PRE UNIVERSITARIO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1389.19
+  },
+  {
+   "nombre": "ODRE HURTADO, MANUEL ANTONIO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE INGENIERIA CIVIL",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1389.19
+  },
+  {
+   "nombre": "ORUNA SIFUENTES, MARCO ANTONIO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE MEDICINA \"HIPOLITO UNANUE\"",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1389.19
+  },
+  {
+   "nombre": "OTAROLA COBA, LUIS ENRIQUE",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "ESCUELA UNIVERSITARIA DE POST GRADO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1389.19
+  },
+  {
+   "nombre": "RAMOS ANGULO, ANTONIO RAYMUNDO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE MEDICINA \"HIPOLITO UNANUE\"",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1389.19
+  },
+  {
+   "nombre": "RAVINES TORRES, JESUS ALBERTO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE MEDICINA \"HIPOLITO UNANUE\"",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1389.19
+  },
+  {
+   "nombre": "RIVERA GUTIERREZ, FELIPE",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE ABASTECIMIENTO Y SERVICIOS GENERALES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1389.19
+  },
+  {
+   "nombre": "RODRIGUEZ HERRERA, PABLO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "ESCUELA UNIVERSITARIA DE POST GRADO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1389.19
+  },
+  {
+   "nombre": "ROJAS FERNANDEZ, CARLOS DELFIN",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE ODONTOLOGIA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1389.19
+  },
+  {
+   "nombre": "SALAS CARRASCO, SAMUEL",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE ABASTECIMIENTO Y SERVICIOS GENERALES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1389.19
+  },
+  {
+   "nombre": "SALAS PEÑA, HUGO CARLOS ARTURO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE MEDICINA \"HIPOLITO UNANUE\"",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1389.19
+  },
+  {
+   "nombre": "SALDIVAR SALAZAR, LINCOL",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "ESCUELA UNIVERSITARIA DE POST GRADO",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1389.19
+  },
+  {
+   "nombre": "SELIS PORTELLA, PATRICIA MARISOL",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE CIENCIAS NATURALES Y MATEMATICA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1389.19
+  },
+  {
+   "nombre": "SOTELO SARMIENTO, EMMA",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE PSICOLOGIA",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1389.19
+  },
+  {
+   "nombre": "URCO DIAZ, MARIO ANTONIO",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE OCEANOGRAFIA, PESQUERIA, CIENCIA ALIMENTARIAS Y ACUICULTUR",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1389.19
+  },
+  {
+   "nombre": "VENTURA CHAVEZ, ANGEL NAPOLEON",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "OFICINA DE ABASTECIMIENTO Y SERVICIOS GENERALES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1389.19
+  },
+  {
+   "nombre": "ZAPATA RISCO, ALAN MANUEL",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE HUMANIDADES",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1389.19
+  },
+  {
+   "nombre": "MUÑOZ RAMIREZ, CARLA PILAR",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE EDUCACIÓN",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1346.0
+  },
+  {
+   "nombre": "ALARCON GUEVARA, MARIA JUDITH",
+   "cargo": "PERSONAL CAS",
+   "dependencia": "FACULTAD DE MEDICINA \"HIPOLITO UNANUE\"",
+   "regimen": "CAS (D.Leg. 1057)",
+   "categoria": "administrativo",
+   "remun": 1257.0
+  }
+ ]
+}
