@@ -214,7 +214,7 @@ function renderProv() {
   new Chart(cProvTipo, { type: 'doughnut', data: { labels: ['Empresas', 'Personas naturales'], datasets: [{ data: [t.monto_empresas / 1e6, t.monto_personas_naturales / 1e6], backgroundColor: [GRANATE, ORO] }] }, options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: 'bottom' }, tooltip: { callbacks: { label: c => c.label + ': S/ ' + c.raw.toFixed(1) + ' M' } } } } });
   // tabla buscable + orden por monto/nº
   w.innerHTML = `<div class="card">
-    <h3>Proveedores de la UNI · ${fmtN(V.proveedores.length)}</h3>
+    <h3>Proveedores de la Villarreal · ${fmtN(V.proveedores.length)}</h3>
     <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:8px 0 12px">
       <input id="provSearch" placeholder="🔎 Buscar proveedor, RUC o dueño…" style="flex:1;min-width:200px;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--tinta);font-size:14px">
       <button class="tgl" style="background:var(--granate2)" id="provSortM">Por monto</button>
