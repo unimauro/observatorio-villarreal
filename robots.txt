@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://unimauro.github.io/observatorio-villarreal/sitemap.xml
