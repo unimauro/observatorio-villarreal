@@ -3,6 +3,9 @@ const CFG = window.OBS_UNI_CONFIG || {};
 const GRANATE = '#1560a8', GRANATE2 = '#124a80', ORO = '#e0a92e', TEAL = '#0e7c86';
 const fmtM = v => 'S/ ' + (v / 1e6).toLocaleString('es-PE', { maximumFractionDigits: 1 }) + ' M';
 const fmtN = v => (v || 0).toLocaleString('es-PE');
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const safeUrl = u => { try { const p = new URL(u); return (p.protocol === 'http:' || p.protocol === 'https:') ? p.href : '#'; } catch { return '#'; } };
+
 const isDark = () => document.documentElement.getAttribute('data-theme') === 'dark';
 const ink = () => isDark() ? '#9fb4c6' : '#5c6b7a';
 const grid = () => isDark() ? 'rgba(255,255,255,.06)' : 'rgba(0,0,0,.06)';
@@ -177,7 +180,7 @@ function renderGasto() {
   }
   const tb = document.querySelector('#tFun tbody');
   if (tb && d.por_funcion?.length) {
-    tb.innerHTML = d.por_funcion.map(x => `<tr><td>${(x.nombre || '—').replace(/^\d+[:.\-]?\s*/, '')}</td><td class="n">${fmtN(Math.round(x.pim))}</td><td class="n">${fmtN(Math.round(x.dev))}</td><td class="n">${x.pim ? Math.round(100 * x.dev / x.pim) + '%' : '—'}</td></tr>`).join('');
+    tb.innerHTML = d.por_funcion.map(x => `<tr><td>${esc((x.nombre || '—').replace(/^\d+[:.\-]?\s*/, ''))}</td><td class="n">${fmtN(Math.round(x.pim))}</td><td class="n">${fmtN(Math.round(x.dev))}</td><td class="n">${x.pim ? Math.round(100 * x.dev / x.pim) + '%' : '—'}</td></tr>`).join('');
   }
   const per = (gen || []).find(x => /PERSONAL/i.test(x.nombre));
   const bys = (gen || []).find(x => /BIENES/i.test(x.nombre));
@@ -220,15 +223,15 @@ function renderProv() {
     </div>
     <div class="scroll"><table><thead><tr><th>Proveedor</th><th>RUC</th><th>Tipo</th><th class="n">Monto (S/)</th><th class="n">Proc.</th><th>Dueño / representante</th></tr></thead><tbody id="provBody"></tbody></table></div>
     <p class="note" id="provCount"></p>
-    <p class="note">Fuente: ${V._meta?.fuente || 'OECE/CONOSCE'} · <a href="${V._meta?.fuente_url || '#'}" target="_blank" rel="noopener">reporte de adjudicaciones</a>. Alcance: adjudicaciones (buena pro); no incluye órdenes de compra menores a 8 UIT. Los dueños/representantes provienen de fuentes públicas y se marcan con su fuente.</p>
+    <p class="note">Fuente: ${V._meta?.fuente || 'OECE/CONOSCE'} · <a href="${esc(safeUrl(V._meta?.fuente_url || '#'))}" target="_blank" rel="noopener">reporte de adjudicaciones</a>. Alcance: adjudicaciones (buena pro); no incluye órdenes de compra menores a 8 UIT. Los dueños/representantes provienen de fuentes públicas y se marcan con su fuente.</p>
   </div>`;
   const body = document.getElementById('provBody'), cnt = document.getElementById('provCount'), inp = document.getElementById('provSearch');
   let sortBy = 'monto';
   const draw = () => {
     const q = (inp.value || '').trim().toLowerCase();
-    let rows = V.proveedores.filter(x => !q || (`${x.nombre} ${x.ruc || ''} ${x.dueno || ''}`).toLowerCase().includes(q));
+    let rows = V.proveedores.filter(x => !q || (`${esc(x.nombre)} ${x.ruc || ''} ${x.dueno || ''}`).toLowerCase().includes(q));
     rows = [...rows].sort((a, b) => sortBy === 'n' ? (b.n - a.n || b.monto - a.monto) : (b.monto - a.monto));
-    body.innerHTML = rows.slice(0, 200).map(x => `<tr><td>${x.nombre}</td><td>${x.ruc || '—'}</td><td>${x.tipo_persona === 'natural' ? '👤 persona' : '🏢 empresa'}</td><td class="n">${fmtN(Math.round(x.monto))}</td><td class="n">${x.n || '—'}</td><td>${x.dueno ? x.dueno + (x.fuente_dueno ? ` <a href="${x.fuente_dueno}" target="_blank" rel="noopener">🔗</a>` : '') : '<span class="pill">por cruzar</span>'}</td></tr>`).join('');
+    body.innerHTML = rows.slice(0, 200).map(x => `<tr><td>${esc(x.nombre)}</td><td>${esc(x.ruc) || '—'}</td><td>${x.tipo_persona === 'natural' ? '👤 persona' : '🏢 empresa'}</td><td class="n">${fmtN(Math.round(x.monto))}</td><td class="n">${x.n || '—'}</td><td>${x.dueno ? esc(x.dueno) + (x.fuente_dueno ? ` <a href="${esc(safeUrl(x.fuente_dueno))}" target="_blank" rel="noopener">🔗</a>` : '') : '<span class="pill">por cruzar</span>'}</td></tr>`).join('');
     cnt.textContent = `${rows.length} proveedor(es)` + (rows.length > 200 ? ' (mostrando 200)' : '') + ` · orden: ${sortBy === 'n' ? 'nº licitaciones' : 'monto'}`;
   };
   inp.addEventListener('input', draw);
@@ -238,7 +241,7 @@ function renderProv() {
   // top personas naturales / terceros
   const pw = document.getElementById('provPersonas');
   if (pw && V.top_personas?.length) {
-    pw.innerHTML = `<div class="card"><h3>👤 Personas naturales / terceros que más ganaron</h3><div class="scroll"><table><thead><tr><th>Nombre</th><th>RUC</th><th class="n">Monto (S/)</th><th class="n">Proc.</th></tr></thead><tbody>${V.top_personas.map(x => `<tr><td>${x.nombre}</td><td>${x.ruc || '—'}</td><td class="n">${fmtN(Math.round(x.monto))}</td><td class="n">${x.n || '—'}</td></tr>`).join('')}</tbody></table></div><p class="note">Locadores de servicios y personas naturales con contrato con la Villarreal (data pública de contrataciones). ${V._meta?.periodo || ''}.</p></div>`;
+    pw.innerHTML = `<div class="card"><h3>👤 Personas naturales / terceros que más ganaron</h3><div class="scroll"><table><thead><tr><th>Nombre</th><th>RUC</th><th class="n">Monto (S/)</th><th class="n">Proc.</th></tr></thead><tbody>${V.top_personas.map(x => `<tr><td>${esc(x.nombre)}</td><td>${esc(x.ruc) || '—'}</td><td class="n">${fmtN(Math.round(x.monto))}</td><td class="n">${x.n || '—'}</td></tr>`).join('')}</tbody></table></div><p class="note">Locadores de servicios y personas naturales con contrato con la Villarreal (data pública de contrataciones). ${V._meta?.periodo || ''}.</p></div>`;
   }
 }
 
@@ -302,7 +305,7 @@ function renderPlan() {
     ['Plazas totales', fmtN(total), 'planilla AIRHSP'],
     ['Docentes', doc ? fmtN(doc.n) : '—', doc ? 'prom S/ ' + fmtN(doc.sueldo_promedio) : ''],
     ['Nominal con nombre', fmtN(P.personas.length), 'régimen CAS (PTE)'],
-    ['Remun. máx (CAS)', 'S/ ' + fmtN(Math.round(P.resumen?.remun?.max || 0)), P.personas[0]?.cargo || ''],
+    ['Remun. máx (CAS)', 'S/ ' + fmtN(Math.round(P.resumen?.remun?.max || 0)), esc(P.personas[0]?.cargo || '')],
   ].map(x => `<div class="kpi"><div class="v">${x[1]}</div><div class="l">${x[0]}</div><div class="s">${x[2] || ''}</div></div>`).join('');
   // charts régimen
   if (reg.length) {
@@ -324,8 +327,8 @@ function renderPlan() {
   const body = document.getElementById('planBody'), cnt = document.getElementById('planCount'), inp = document.getElementById('planSearch');
   const draw = (q = '') => {
     q = q.trim().toLowerCase();
-    const rows = P.personas.filter(x => !q || (`${x.nombre} ${x.cargo || ''} ${x.dependencia || ''}`).toLowerCase().includes(q));
-    body.innerHTML = rows.slice(0, 400).map(x => `<tr><td>${x.nombre}</td><td>${x.cargo || '—'}</td><td>${x.dependencia || '—'}</td><td class="n">${x.remun ? fmtN(Math.round(x.remun)) : '—'}</td></tr>`).join('');
+    const rows = P.personas.filter(x => !q || (`${esc(x.nombre)} ${x.cargo || ''} ${x.dependencia || ''}`).toLowerCase().includes(q));
+    body.innerHTML = rows.slice(0, 400).map(x => `<tr><td>${esc(x.nombre)}</td><td>${esc(x.cargo) || '—'}</td><td>${esc(x.dependencia) || '—'}</td><td class="n">${x.remun ? fmtN(Math.round(x.remun)) : '—'}</td></tr>`).join('');
     cnt.textContent = q ? `${rows.length} resultado(s)` + (rows.length > 400 ? ' (mostrando 400)' : '') : `Mostrando ${Math.min(400, rows.length)} de ${rows.length}, ordenados por remuneración`;
   };
   inp.addEventListener('input', e => draw(e.target.value));
@@ -337,7 +340,7 @@ async function sendChat() {
   const inp = document.getElementById('chatIn'), box = document.getElementById('msgs');
   const q = inp.value.trim(); if (!q) return;
   inp.value = '';
-  box.insertAdjacentHTML('beforeend', `<div class="m u">${q.replace(/</g, '&lt;')}</div>`);
+  box.insertAdjacentHTML('beforeend', `<div class="m u">${esc(q)}</div>`);
   const wait = document.createElement('div'); wait.className = 'm a'; wait.textContent = '…'; box.appendChild(wait); box.scrollTop = box.scrollHeight;
   const ctx = buildCtx();
   try {
